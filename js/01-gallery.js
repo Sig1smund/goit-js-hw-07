@@ -23,9 +23,9 @@ const imagesMarkup = makeImagesMarkup(galleryItems);
 
 galleryRef.insertAdjacentHTML("beforeend", imagesMarkup);
 
-galleryRef.addEventListener("click", ongalleryContainerClick);
+galleryRef.addEventListener("click", onGalleryItemClick);
 
-function ongalleryContainerClick(e) {
+function onGalleryItemClick(e) {
   e.preventDefault();
   if (e.target.nodeName !== "IMG") {
     return;
