@@ -18,7 +18,7 @@ function makeImagesMarkup(imgs) {
         `;
     })
     .join("");
-}
+};
 
 const imagesMarkup = makeImagesMarkup(galleryItems);
 
